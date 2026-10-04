@@ -26,11 +26,11 @@ export function Footer() {
             <h2 className="text-sm font-semibold text-cream">Explore</h2>
             <ul className="mt-4 space-y-3">
               {navLinks.map((l) =>
-              <li key={l.to}>
+                <li key={l.to}>
                   <Link
-                  to={l.to}
-                  className="text-sm text-cream/65 transition-colors duration-150 hover:text-amber">
-                  
+                    to={l.to}
+                    className="text-sm text-cream/65 transition-colors duration-150 hover:text-amber">
+
                     {l.label}
                   </Link>
                 </li>
@@ -45,7 +45,7 @@ export function Footer() {
                 <a
                   href={`mailto:${company.email}`}
                   className="text-cream/65 transition-colors duration-150 hover:text-amber">
-                  
+
                   {company.email}
                 </a>
               </li>
@@ -55,14 +55,14 @@ export function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   className="text-cream/65 transition-colors duration-150 hover:text-amber">
-                  
+
                   WhatsApp {company.whatsappDisplay}
                 </a>
               </li>
               <li>
                 <address className="not-italic leading-relaxed text-cream/65">
                   {company.addressLines.map((line) =>
-                  <span key={line} className="block">
+                    <span key={line} className="block">
                       {line}
                     </span>
                   )}
@@ -72,11 +72,17 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-2 border-t border-cream/10 pt-6 text-sm text-cream/50 sm:flex-row sm:justify-between">
+        <div className="mt-14 flex flex-col gap-3 border-t border-cream/10 pt-6 text-sm text-cream/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {company.name}. All rights reserved.
           </p>
-          <p>Pure Ceylon Tea · Made in Sri Lanka</p>
+          <div className="flex flex-col gap-1 sm:items-end">
+            <p>Pure Ceylon Tea · Made in Sri Lanka</p>
+            {/* <p className="text-xs text-cream/40">
+              Made by <span className="text-cream/60"><a href="https://pengosolutions.com">Pengo Solutions</a></span> and powered by{' '}
+              <span className="text-cream/60"><a href="https://www.devrious.lk">Devrious</a></span>
+            </p> */}
+          </div>
         </div>
       </div>
     </footer>);

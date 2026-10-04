@@ -1,4 +1,5 @@
 export const LOGO_URL = "/siteLOGO.png";
+export const FAVICON_URL = "/favicon.png?v=2";
 
 
 export const images = {

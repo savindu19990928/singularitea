@@ -9,10 +9,10 @@ import { Journey } from './pages/Journey';
 import { VisionMission } from './pages/VisionMission';
 import { Contact } from './pages/Contact';
 import { useFavicon } from './hooks/useFavicon';
-import { LOGO_URL } from './data/content';
+import { FAVICON_URL } from './data/content';
 
 export function App() {
-  useFavicon(LOGO_URL, 'Singularitea — Distinctly Sri Lankan. Naturally Exceptional.');
+  useFavicon(FAVICON_URL, 'Singularitea — Distinctly Sri Lankan. Naturally Exceptional.');
 
   return (
     <MotionConfig reducedMotion="user">
