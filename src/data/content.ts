@@ -18,8 +18,8 @@ export const images = {
 export const company = {
   name: 'Singularitea (Pvt) Ltd',
   email: 'info@singularitea.lk',
-  whatsappDisplay: '+94 77 332 3668',
-  whatsappNumber: '94773323668',
+  whatsappDisplay: '+94 71 488 3668',
+  whatsappNumber: '+94714883668',
   address: '35/7, Senanayake Mawatha, Ratnapura, Sri Lanka',
   addressLines: ['35/7, Senanayake Mawatha', 'Ratnapura', 'Sri Lanka'],
   tagline: 'The Character of Ceylon, Crafted for the World.'
